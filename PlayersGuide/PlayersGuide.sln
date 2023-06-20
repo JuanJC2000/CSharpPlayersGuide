@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayersGuide", "PlayersGuide.csproj", "{3E2B8D18-1DC9-4606-8D63-23A7D47BEC27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayersGuide", "PlayersGuide.csproj", "{3E2B8D18-1DC9-4606-8D63-23A7D47BEC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watchtower", "..\Watchtower\Watchtower.csproj", "{F1AEAF4F-1D6E-45BC-BFF5-2C39482BAAD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3E2B8D18-1DC9-4606-8D63-23A7D47BEC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E2B8D18-1DC9-4606-8D63-23A7D47BEC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E2B8D18-1DC9-4606-8D63-23A7D47BEC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1AEAF4F-1D6E-45BC-BFF5-2C39482BAAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AEAF4F-1D6E-45BC-BFF5-2C39482BAAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AEAF4F-1D6E-45BC-BFF5-2C39482BAAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AEAF4F-1D6E-45BC-BFF5-2C39482BAAD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
