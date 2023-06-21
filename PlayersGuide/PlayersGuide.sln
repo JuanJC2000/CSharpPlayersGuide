@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watchtower", "..\Watchtower
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyingInventory", "..\BuyingInventory\BuyingInventory.csproj", "{3C78E45F-7BA5-43D0-BA74-043BC2F86A3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePrototype", "..\ThePrototype\ThePrototype.csproj", "{91A3D93D-85D4-41A1-BD40-68942F13F3AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3C78E45F-7BA5-43D0-BA74-043BC2F86A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C78E45F-7BA5-43D0-BA74-043BC2F86A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C78E45F-7BA5-43D0-BA74-043BC2F86A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A3D93D-85D4-41A1-BD40-68942F13F3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A3D93D-85D4-41A1-BD40-68942F13F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A3D93D-85D4-41A1-BD40-68942F13F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A3D93D-85D4-41A1-BD40-68942F13F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
