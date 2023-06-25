@@ -1,52 +1,39 @@
-﻿int chosenNumber;
-bool numberIsRight = false;
-
-do
-{
-    Console.Write("User 1, enter a number between 0 and 100: ");
-    chosenNumber = Convert.ToInt32(Console.ReadLine());
-    Console.Clear();
-    
-
-}
-while (chosenNumber < 0 || chosenNumber > 100);
-
+﻿//save return variable from AskForNumberInRange inside global variable name 'number'.
+int number = AskForNumberInRange("User 1, enter a number between 0 and 100: ", 0, 100); //Method takes data text, min int, and max int.
 Console.Clear();
+
 Console.WriteLine("User 2, guess the number.");
 
-do
+while (true)
 {
-    Console.Write("What is your next guess? ");
-    int whichNumber = Convert.ToInt32(Console.ReadLine());
-
-    if (whichNumber == chosenNumber)
-    {
-        Console.WriteLine("You guessed the number.");
-        break;
-    }
-       
-
-    else if (whichNumber > chosenNumber)
-        Console.WriteLine($"{whichNumber} is too high.");
-    else if (whichNumber < chosenNumber)
-        Console.WriteLine($"{whichNumber} is too low.");
-
-    /*
-    whichNumber = chosenNumber switch
-    {
-        whichNumber == chosenNumber => "You guessed the number.",
-        whichNumber > chosenNumber => $"{whichNumber} is too high.",
-        whichNumber < chosenNumber => $"{whichNumber} is too low."
-
-
-
-
-
-    };
-    */
-
-
-
+    int guess = AskForNumber("What is your next guess?: ");
+    if (guess > number) Console.WriteLine($"{guess} is too high.");
+    else if (guess < number) Console.WriteLine($"{guess} is too low.");
+    else break;
 }
-while (true);
+
+Console.WriteLine("You guessed the number!");
+
+
+///<summary>
+///AskForNumber
+///</summary>
+int AskForNumber(string text)
+{
+    Console.Write(text);
+    int response = Convert.ToInt32(Console.ReadLine());
+    return response;
+}
+
+int AskForNumberInRange(string text, int min, int max)
+{
+    while (true)
+    {
+        int number = AskForNumber(text);
+        if (number >= min && number <= max)
+            return number;
+        Console.WriteLine("Try Again");
+    }
+}
+
 
